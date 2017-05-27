@@ -2,15 +2,11 @@ buildscript {
     repositories {
         jcenter()
     }
-    dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE')
-    }
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'war'
+apply plugin: 'ear'
 
 version = '0.0.1'
 sourceCompatibility = 1.8
@@ -19,14 +15,8 @@ repositories {
     jcenter()
 }
 
-configurations {
-    providedRuntime
-}
-
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
-    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    deploy project(path: 'war', configuration: 'archives')
 }
 
 task wrapper(type: Wrapper) { gradleVersion = '3.5' }
