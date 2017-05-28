@@ -21,12 +21,12 @@ Building EAR
 Testing
 -------
 
-    $ docker run --name test -h test -p 9043:9043 -p 9443:9443 -d ibmcom/websphere-traditional:8.5.5.9-profile
-    $ open https://localhost:9043/ibm/console/login.do?action=secure
+    $ docker run -p 9043:9043 -p 9443:9443 -d ibmcom/websphere-traditional
+    $ open https://localhost:9043/ibm/console
 
 Use the following credentials:
 * User: wsadmin
-* Password: $(docker exec test cat /tmp/PASSWORD)
+* Password: $(docker exec [CONTAINERID] cat /tmp/PASSWORD)
 
 Deploy EAR using admin console and open the following URL:
 
