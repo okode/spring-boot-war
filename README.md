@@ -31,3 +31,7 @@ Use the following credentials:
 Deploy EAR using admin console and open the following URL:
 
     $ open https://localhost:9443/war-0.0.1/hello/John
+
+WAS cells directory:
+
+    /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells
