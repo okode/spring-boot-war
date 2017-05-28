@@ -1,7 +1,9 @@
 Spring Boot WAR / EAR
 =====================
 
-[![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
+develop: [![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
+
+master: [![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
 
 Simple Spring Boot project with WAR / EAR packaging.
 
