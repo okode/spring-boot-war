@@ -1,0 +1,12 @@
+language: java
+jdk:
+- oraclejdk8
+before_install:
+- export LANG=en_US.UTF-8
+script:
+- ./gradlew ear
+notifications:
+  email:
+    recipients:
+      - developers@okode.com
+
