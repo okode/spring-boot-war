@@ -3,6 +3,10 @@ jdk:
 - oraclejdk8
 before_install:
 - export LANG=en_US.UTF-8
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
 script:
 - ./gradlew ear
 notifications:
