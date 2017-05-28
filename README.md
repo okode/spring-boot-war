@@ -1,6 +1,8 @@
 Spring Boot WAR
 ===============
 
+[![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
+
 Simple Spring Boot project with WAR packaging.
 
 Running
