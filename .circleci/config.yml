@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/src
+    docker:
+      - image: okode/openjdk
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: ./gradlew ear
+workflows:
+  version: 2
+  springbootwar:
+    jobs:
+      - build:
+          context: org-global
+          filters:
+            branches:
+              ignore:
+                - master
+            tags:
+              only: /.*/
