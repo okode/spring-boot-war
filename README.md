@@ -1,7 +1,7 @@
 Spring Boot WAR / EAR
 =====================
 
-[![CircleCI](https://circleci.com/gh/okode/spring-boot-war/tree/develop.svg?style=svg)](https://circleci.com/gh/okode/spring-boot-war/tree/develop)
+[![CircleCI](https://circleci.com/gh/okode/spring-boot-war/tree/develop.svg?style=shield)](https://circleci.com/gh/okode/spring-boot-war/tree/develop)
 
 Simple Spring Boot project with Executable WAR / Standard WAR / EAR packaging.
 
