@@ -24,4 +24,4 @@ dependencies {
     deploy project(path: 'war', configuration: 'archives')
 }
 
-task wrapper(type: Wrapper) { gradleVersion = '3.5' }
+task wrapper(type: Wrapper) { gradleVersion = '4.1' }
