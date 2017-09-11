@@ -42,7 +42,7 @@ Deploy EAR using admin console and set `parent-last` classloader policy.
 
 Open the following URL:
 
-    $ open https://localhost:9443/war-0.0.1/hello/John
+    $ open https://localhost:9443/war-[VERSION]/hello/John
 
 Info
 ----
