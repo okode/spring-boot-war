@@ -3,7 +3,7 @@ Spring Boot WAR / EAR
 
 [![CircleCI](https://circleci.com/gh/okode/spring-boot-war/tree/develop.svg?style=shield)](https://circleci.com/gh/okode/spring-boot-war/tree/develop)
 
-Simple Spring Boot project with Executable WAR / Standard WAR / EAR packaging.
+Simple Spring Boot project with Executable JAR / Standard WAR / EAR packaging.
 
 Running
 -------
@@ -20,7 +20,7 @@ Building EAR
 
     $ ./gradlew ear
 
-Building executable WAR
+Building executable JAR
 -----------------------
 
     $ ./gradlew bootRepackage

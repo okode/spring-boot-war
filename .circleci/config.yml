@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: ./gradlew ear
+          command: ci/build.sh
 workflows:
   version: 2
   springbootwar:
