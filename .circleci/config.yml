@@ -11,6 +11,9 @@ jobs:
       - run:
           name: Build
           command: ci/build.sh
+      - run:
+          name: Deploy to GitHub
+          command: ci/deploy.sh
 workflows:
   version: 2
   springbootwar:
