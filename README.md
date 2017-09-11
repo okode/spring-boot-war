@@ -1,11 +1,9 @@
 Spring Boot WAR / EAR
 =====================
 
-develop: [![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
+[![CircleCI](https://circleci.com/gh/okode/spring-boot-war/tree/develop.svg?style=shield)](https://circleci.com/gh/okode/spring-boot-war/tree/develop)
 
-master: [![Build Status](https://travis-ci.org/okode/spring-boot-war.svg?branch=master)](https://travis-ci.org/okode/spring-boot-war)
-
-Simple Spring Boot project with WAR / EAR packaging.
+Simple Spring Boot project with Executable JAR / Standard WAR / EAR packaging.
 
 Running
 -------
@@ -21,6 +19,11 @@ Building EAR
 ------------
 
     $ ./gradlew ear
+
+Building executable JAR
+-----------------------
+
+    $ ./gradlew bootRepackage
 
 Testing
 -------
@@ -39,7 +42,7 @@ Deploy EAR using admin console and set `parent-last` classloader policy.
 
 Open the following URL:
 
-    $ open https://localhost:9443/war-0.0.1/hello/John
+    $ open https://localhost:9443/war-[VERSION]/hello/John
 
 Info
 ----
