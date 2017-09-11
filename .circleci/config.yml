@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/src
+    working_directory: ~/spring-boot-war
     docker:
       - image: okode/openjdk
     environment:
